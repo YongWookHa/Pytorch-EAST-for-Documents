@@ -1,0 +1,1 @@
+python main.py configs/east_exp_1.json

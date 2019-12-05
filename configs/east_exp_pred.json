@@ -1,0 +1,29 @@
+{
+  "exp_name": "east_exp_1",
+  "agent": "EAST_agent",
+  "mode": "predict",
+
+  "cuda": true,
+  "data_parallel" : true,
+  "seed": 1337,
+
+  "train_test_ratio": 0.8,
+  "lr":1e-4,
+  "input_channels": 3,
+
+  "epochs": 30,
+  "learning_rate": 0.1,
+  "bs": 32,
+  "data_shuffle": true,
+
+  "log_interval" : 5,
+  "num_w": 8,
+
+  "vgg16" : "experiments/vgg16_bn-6c64b313.pth",
+  "tr_im_pth": "data/ICDAR2015/ch4_training_images",
+  "tr_gt_pth": "data/ICDAR2015/ch4_training_localization_transcription_gt",
+  "te_im_pth": "data/ICDAR2015/ch4_test_images",
+  "te_gt_pth": "data/ICDAR2015/Challenge4_Test_Task1_GT",
+  "checkpoint_file" : "experiments/east_exp_1/out/east_exp_1_epoch588_iter18290.pt",
+  "pred_img_pth" : "."
+}
